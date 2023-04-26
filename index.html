@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EventAppByKaran</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
+
+</head>
+<body>
+	<div id="event-app">
+		<div id="homeScreen">
+			<div class="header">
+				<div class="three-striped">
+					<div onclick="openStripedMenu()" style="cursor: pointer;">
+						<div class="lines"></div>
+						<div class="lines"></div>
+						<div class="lines"></div>
+					</div>
+				</div>
+				<div class="header-text">
+					<span>Event</span>
+				</div>
+				<div class="search-bar">
+					<img src="search.svg" alt="search-bar">
+				</div>
+			</div>
+
+			<div class="event-card-container">
+				<div class="event-card-heading-details">
+					<div class="data-main-one">
+						<div id="event-name">
+							<span></span>
+						</div>
+						<div id="venue-container">
+							<span></span>
+						</div>
+					</div>
+					<div class="data-main-two">
+						<div id="time-container">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="main-card-container" id="main-card-container"></div>
+			</div>
+			
+			<div class="footer" id="footer">
+				<div class="burger-menu-container"></div>
+				<div class="event-create-container">
+					<span onclick="createMenu()" style="cursor: pointer;" id="event-text">create event</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="createMenuScreen">
+			<div class="input-container">
+				<input type="text" placeholder="event name">
+				<input type="text" placeholder="event name">
+				<input type="text" placeholder="event name">
+				<input type="text" placeholder="event name">
+				<button type="submit" name="btn_submit">Enter</button>
+			</div>
+		</div>
+
+
+		<div id="left-side-menu">
+			<div class="user-info-container">
+				<div class="welcome-user">
+					<span>Hello, Lathigara Karan</span>
+				</div>
+				<div class="password-info">
+					<span>Change Password</span>
+				</div>
+				<div class="password-info">
+					<span>View registered Events</span>
+				</div>
+				<div class="password-info">
+					<span>Register Now</span>
+				</div>
+			</div>
+
+			<div class="notification-container">
+				<div class="different-options">
+					<span>History</span>
+				</div>
+				<div class="different-options">
+					<span>Notifications</span>
+				</div>
+				<div class="different-options">
+					<span>About</span>
+				</div>
+				<div class="different-options">
+					<span>Contact</span>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div id="event-details-container">
+			<div class="event-banner-container">
+				<div class="back-button-container">
+					<img src="right-arrow.svg" onclick="backBtn()">
+				</div>
+				<div class="page-name">
+					<span>Event details</span>
+				</div>
+			</div>
+			<div class="event-details">
+				<div class="event-heading-and-button">
+					<span></span>
+					<button>interested</button>
+				</div>
+				
+				<div class="location">
+					<span>Moscow, gujarat</span>
+				</div>
+				<div class="date">
+					<span>nov 14th, 2020</span>
+				</div>
+			</div>
+			<div class="event-adding-option">
+				<div class="add-buttons">
+					<button>add to calender</button>
+					<button onclick="openDesc()">
+						<span>Know more</span>
+						<img src="left-arrow.svg" style="transform: rotateZ(180deg)">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="description-container">
+			<div class="close-btn">
+				<div class="close-circle" onclick="closeDesc()">
+					<img src="close.svg" height="15px" width="15px">
+				</div>
+			</div>
+			<div class="event-description">
+				<span>Mollit occaecat officia ad veniam in mollit anim eiusmod quis deserunt esse sunt est officia duis esse ea magna amet in ex eiusmod ut veniam labore reprehenderit officia.</span>
+			</div>
+		</div>
+
+
+	</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
